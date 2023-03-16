@@ -1,0 +1,53 @@
+name: "Build"
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.gitignore'
+      - '**/*.gitattributes'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.gitignore'
+      - '**/*.gitattributes'
+  workflow_dispatch:
+    branches:
+      - main
+    paths-ignore:
+      - '**/*.md'
+      - '**/*.gitignore'
+      - '**/*.gitattributes'
+      
+jobs:
+  build:
+    name: Build 
+    runs-on: windows-latest
+    env:
+        PROJECT: RedShiftCalibration/RedShiftCalibration/RedShiftCalibration.csproj
+
+    steps:
+    - uses: actions/checkout@v3
+      
+    - name: Setup .NET SDK
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 7.0.x
+
+    - name: Setup xmake
+      uses: xmake-io/github-action-setup-xmake@v1
+      with:
+        xmake-version: '2.7.5'
+
+    - name: Restore
+      run: dotnet restore $PROJECT
+
+    - name: Pack
+      run: dotnet pack --configuration Release $PROJECT
+
+    - name: Build
+      run: dotnet build --configuration Release --no-restore $PROJECT
