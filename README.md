@@ -14,4 +14,4 @@ Tips:
 - the default values (Red: +0.090, Blue: -0.022) should work for most people that have the IPD manually set in Varjo Base to their actual IPD values (measured by an optician). 
 - AutoIPD is unreliable and measures different values each run and can measure different values depending if you're using lens inserts, glasses, contact lenses or just the naked eye. Set your IPD to "manual" in Varjo Base and leave it at the IPD you adjusted your CA Correction values to. The correction values are IPD dependent! If you alter your IPD you will need different values!
 
-*needs OpenXR Toolkit > 1.3.0 and only works on Varjo in Varjo Base OpenXR
+*needs OpenXR Toolkit >1.3.0 and only works on Varjo in Varjo Base OpenXR
