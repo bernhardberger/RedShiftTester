@@ -23,4 +23,4 @@ If there are any questions, please feel free to reach out to me on discord: stei
 ---
 
 
-Big thanks to @mbucchia for making this feature available in OpenXR Toolkit! (https://mbucchia.github.io/OpenXR-Toolkit/)
+Big thanks to @mbucchia for making the feature for correction of chromatic abberations on Varjo HMDs available in OpenXR Toolkit! (https://mbucchia.github.io/OpenXR-Toolkit/)
