@@ -19,9 +19,5 @@
     <None Remove="Assets\floor.hlsl" />
   </ItemGroup>
 
-  <ItemGroup>
-    <SKShader Include="Assets\floor.hlsl" />
-  </ItemGroup>
-
 </Project>
 
