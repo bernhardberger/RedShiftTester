@@ -27,8 +27,6 @@ jobs:
   build:
     name: Build 
     runs-on: windows-latest
-    env:
-        PROJECT: RedShiftCalibration\RedShiftCalibration\RedShiftCalibration.csproj
 
     steps:
     - uses: actions/checkout@v3
@@ -37,6 +35,6 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore $PROJECT
+      run: dotnet restore RedShiftCalibration\RedShiftCalibration\RedShiftCalibration.csproj
     - name: Build
-      run: dotnet build --configuration Release --no-restore $PROJECT
+      run: dotnet build --configuration Release --no-restore RedShiftCalibration\RedShiftCalibration\RedShiftCalibration.csproj
