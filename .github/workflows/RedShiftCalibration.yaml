@@ -28,7 +28,7 @@ jobs:
     name: Build 
     runs-on: windows-latest
     env:
-        PROJECT: RedShiftCalibration/RedShiftCalibration/RedShiftCalibration.csproj
+        PROJECT: RedShiftCalibration\RedShiftCalibration\RedShiftCalibration.csproj
 
     steps:
     - uses: actions/checkout@v3
