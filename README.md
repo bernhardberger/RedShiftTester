@@ -15,3 +15,10 @@ Tips:
 - AutoIPD is unreliable and measures different values each run and can measure different values depending if you're using lens inserts, glasses, contact lenses or just the naked eye. Set your IPD to "manual" in Varjo Base and leave it at the IPD you adjusted your CA Correction values to. The correction values are IPD dependent! If you alter your IPD you will need different values!
 
 *needs OpenXR Toolkit >1.3.0 and only works on Varjo in Varjo Base OpenXR
+
+---
+If there are any questions, please feel free to reach out to me on discord: steiNetti#5857
+---
+
+
+Big thanks to @mbucchia for making this feature available in OpenXR Toolkit! (https://mbucchia.github.io/OpenXR-Toolkit/)
