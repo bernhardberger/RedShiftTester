@@ -17,9 +17,11 @@ Tips:
 *needs OpenXR Toolkit >1.3.0 and only works on Varjo in Varjo Base OpenXR
 
 ### Known Issues:
-- if you're using OpenXR Motion Compensation (), you will need to disable OXRMC for this app.
 
-`%APPDATA%\..\Local\OpenXR-MotionCompensation\RedShiftCalibration.ini`:
+#### Incompatibility of this Test-App with OpenXR Motion Compensation:
+- if you're using OpenXR Motion Compensation, you will need to disable OXRMC for this app. Create the following .ini file if it doesn't already exist and set `enabled=0` in the `[startup]` section.
+
+**%APPDATA%\\..\Local\OpenXR-MotionCompensation\RedShiftCalibration.ini:**
 ```ini
 [startup]
 enabled=0
